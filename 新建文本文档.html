@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的网页</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      background-image: url("https://gd-hbimg.huaban.com/2ae59eff1ff24119f14821ff67486e11cb2a87f420c2b-bH5n02_fw1200webp");
+      background-size: cover;
+    }
+    h1 {
+      text-align: center;
+    }
+    .login-form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .login-form input,
+    .login-form button {
+      display: block;
+      margin: 10px auto;
+    }
+    .game-introduction {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: justify;
+    }
+  </style>
+  <script>
+    function login() {
+      var username = document.querySelector('input[type="text"]').value;
+      var password = document.querySelector('input[type="password"]').value;
+      console.log("账号：" + username);
+      console.log("密码：" + password);
+    }
+  </script>
+</head>
+<body>
+  <h1>欢迎来到我的网页！</h1>
+  <p>这是一个简单的HTML网页示例。</p>
+  
+  <h2>登入账号</h2>
+  <div class="login-form">
+    <input type="text" placeholder="账号">
+    <input type="password" placeholder="密码">
+    <button onclick="login()">登入</button>
+  </div>
+  
+  <div class="game-introduction">
+    <h2>光遇 - 一个美丽的冒险游戏</h2>
+    <p>光遇（Sky: Children of the Light）是一款由thatgamecompany开发的冒险游戏。在游戏中，你将扮演一位来自天空之国的孩子，探索一个被星星之光照耀的奇幻世界。</p>
+    <p>游戏以美轮美奂的场景、精心设计的音乐和富有情感的故事著称。你将与其他玩家一起旅行，解谜，收集光点，恢复世界的平衡，同时也会发现各种隐藏的秘密。</p>
+    <p>光遇是一款独特而令人愉悦的游戏体验，它注重探索、合作和互动，让玩家在游戏中感受到一种和谐与美好的氛围。</p>
+  </div>
+</body>
+</html>
